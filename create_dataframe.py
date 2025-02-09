@@ -1,5 +1,5 @@
 from pyspark.sql import SparkSession
-
+#Creating sparksession
 spark = SparkSession.builder.master("local[*]").appName("createDataframe").getOrCreate()
 # Empty DataFrame with no data
 empty_df = spark.createDataFrame([], "id INT, name STRING")
